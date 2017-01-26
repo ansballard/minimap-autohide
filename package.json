@@ -1,12 +1,25 @@
 {
-  "name": "minimap-autohide",
-  "main": "./lib/minimap-autohide",
-  "version": "0.10.1",
+  "name": "minimap-autohide-2",
+  "main": "./lib/minimap-autohide.js",
+  "version": "1.0.0",
   "description": "Automatically hide the minimap when you aren't using it.",
-  "repository": "https://github.com/jayk/minimap-autohide",
+  "repository": "https://github.com/ansballard/minimap-autohide",
+  "author": {
+    "name": "Aaron Ballard (ansballard)",
+    "email": "ans.ballard@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Jay Kuri (jayk)"
+    },
+    {
+      "name": "Aaron Ballard (ansballard)",
+      "email": "ans.ballard@gmail.com"
+    }
+  ],
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">=1.13.0"
   },
   "consumedServices": {
     "minimap": {
@@ -15,7 +28,7 @@
       }
     }
   },
-  "dependencies": {
-    "event-kit": ">= 0.7.2"
+  "devDependencies": {
+    "eslint": "^3.14.1"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "extends": "eslint:recommended",
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true
+  },
+  "globals": {
+    "atom": true
+  },
+  "rules": {
+    "quotes": [1, "double"],
+    "semi": [1, "always"],
+    "no-console": [1]
+  }
+}
