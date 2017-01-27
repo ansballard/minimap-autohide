@@ -1,9 +1,9 @@
 {
-  "name": "minimap-autohide-2",
-  "main": "./lib/minimap-autohide.js",
-  "version": "1.0.0",
+  "name": "minimap-autohider",
+  "main": "./lib/minimap-autohider.js",
+  "version": "1.1.0",
   "description": "Automatically hide the minimap when you aren't using it.",
-  "repository": "https://github.com/ansballard/minimap-autohide",
+  "repository": "https://github.com/ansballard/minimap-autohider",
   "author": {
     "name": "Aaron Ballard (ansballard)",
     "email": "ans.ballard@gmail.com"

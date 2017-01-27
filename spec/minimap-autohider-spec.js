@@ -1,6 +1,6 @@
-require("../lib/minimap-autohide.js");
+require("../lib/minimap-autohider.js");
 
-describe("minimap-autohide-2", () => {
+describe("minimap-autohider", () => {
   let [ editor, editorElement, workspaceElement ] = [];
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
@@ -12,7 +12,7 @@ describe("minimap-autohide-2", () => {
       atom.packages.activatePackage("minimap")
     );
     waitsForPromise(() =>
-      atom.packages.activatePackage("minimap-autohide-2")
+      atom.packages.activatePackage("minimap-autohider")
     );
     waitsFor(() =>
       workspaceElement.querySelector("atom-text-editor")
@@ -28,15 +28,12 @@ describe("minimap-autohide-2", () => {
       workspaceElement.querySelector("atom-text-editor atom-text-editor-minimap")
     );
   });
-  return describe("with an open editor with minimap and autohide active", () =>
+  return describe("with an open editor with minimap and autohider active", () =>
     Promise.all([
-      it("minimap is visible on start", () => {
-        expect(window.getComputedStyle(editorElement.querySelector("atom-text-editor-minimap")).opacity).toBe("1");
-      }),
-      it("minimap is not visible after `atom.get('minimap-autohide-2').TimeToHide` milliseconds", () => {
+      it("minimap is not visible after `atom.get('minimap-autohider').TimeToHide` milliseconds", () => {
         setTimeout(() => {
           expect(window.getComputedStyle(editorElement.querySelector("atom-text-editor-minimap")).opacity).toBe("0.05");
-        }, atom.config.get("minimap-autohide-2").TimeToHide + 100);
+        }, atom.config.get("minimap-autohider").TimeToHide + 100);
       }),
       it("minimap should be visible after scroll event", () => {
         editor.scrollToScreenPosition([ 19, 0 ]);

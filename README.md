@@ -1,20 +1,24 @@
-# minimap-autohide package
+# minimap-autohider package
 
 ## Hide your minimap until you need it.
 
 This package automatically hides the minimap until you need it.
 
+_Forked from [jayk/minimap-autohide](https://github.com/jayk/minimap-autohide)_
+
 When editing normally, you have the entire window for your editor. As soon as you begin to scroll, the minimap appears and you can interact with it normally.
 
 Written by @JayKuri - If you like it, say Hi!
 
-![Minimap autohide animated image](https://raw.githubusercontent.com/jayk/minimap-autohide/master/screenshot.gif)
+Forked and updated by @ansballard
+
+![Minimap autohider animated image](screenshot.gif)
 
 By default the minimap will be hidden when not scrolling, and will slide out from the right when scrolling.  You can, however, tweak the appearance. When you are scrolling, the minimap will have a class 'scrolling' added to it. You can therefore override the default by adding an entry to your personal styles.less file.
 
 For example, this style entry restores the original look of the minimap, but causes the minimap to instantly disappear when not scrolling... for a more 'snap-in' effect.
 
-    atom-text-editor::shadow {
+    atom-text-editor {
       atom-text-editor-minimap.scrolling {
         left: 0px;
         display: block;

@@ -8,3 +8,7 @@
 * fix refererence to `editor.editorElement.onDidChangeScrollTop`
 * add settings config, currently just for custom delay before hiding
 * added working specs
+## 1.1.0 - Renamed
+* this is really a breaking change, but I'm a rebel
+* renamed to `minimap-autohider` instead of keeping the name or adding `-2`
+* removed an inconsistent spec
