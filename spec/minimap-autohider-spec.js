@@ -39,7 +39,7 @@ describe("minimap-autohider", () => {
         editor.scrollToScreenPosition([ 19, 0 ]);
         setTimeout(() => {
           expect(window.getComputedStyle(editorElement.querySelector("atom-text-editor-minimap")).opacity).toBe("1");
-        }, 300);
+        }, atom.config.get("minimap-autohider").TransitionDuration + 100);
       })
     ])
   );
