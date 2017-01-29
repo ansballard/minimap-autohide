@@ -12,3 +12,8 @@
 * this is really a breaking change, but I'm a rebel
 * renamed to `minimap-autohider` instead of keeping the name or adding `-2`
 * removed an inconsistent spec
+## 1.2.0 - The Performance-ening
+* transition now works on transform, not left, for silky smooth frames
+* added support for left-aligned minimaps
+* updated readme
+* added delay to opacity spec

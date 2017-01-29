@@ -37,7 +37,9 @@ describe("minimap-autohider", () => {
       }),
       it("minimap should be visible after scroll event", () => {
         editor.scrollToScreenPosition([ 19, 0 ]);
-        expect(window.getComputedStyle(editorElement.querySelector("atom-text-editor-minimap")).opacity).toBe("1");
+        setTimeout(() => {
+          expect(window.getComputedStyle(editorElement.querySelector("atom-text-editor-minimap")).opacity).toBe("1");
+        }, 300);
       })
     ])
   );
