@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.2 - Patch TransitionDuration Bug
+
+**Minor**
+
+- remove TransitionDuration setting until I can actually fix it
+  - Broke windows in 1.14.4
+
 ## 1.3.1 - Configurable Transitions
 
 **Minor**

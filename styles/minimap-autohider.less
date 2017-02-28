@@ -6,12 +6,14 @@
 // @import "ui-variables"; // not currently used
 @import "./custom";
 
+@TransitionDurationPatch: 0.1s;
+
 atom-text-editor {
   atom-text-editor-minimap {
     background: rgba(0,0,0,0.2);
     position: absolute;
     transform: translateX(0);
-    transition: transform @TransitionDuration, opacity @TransitionDuration * 2;
+    transition: transform @TransitionDurationPatch, opacity @TransitionDurationPatch * 2;
     opacity: 0.05;
     left: 100%;
     &.left {
