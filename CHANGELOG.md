@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.3.3 - Fix TransitionDuration Bug
+
+**Minor**
+
+- reenable transition duration
+  - add disclaimer that it requires a reload
+  - add a `default.less` file in case `custom.less` is being written as it's read
+
 ## 1.3.2 - Patch TransitionDuration Bug
 
 **Minor**

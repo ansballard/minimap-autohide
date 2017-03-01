@@ -8,8 +8,6 @@ When editing normally, you have the entire window for your editor. As soon as yo
 
 ![Default Autohide Behavior](https://raw.githubusercontent.com/ansballard/minimap-autohider/master/gifs/autohider.gif)
 
-**Transition Duration Customization Temporarily Disabled**
-
 By default, the minimap will be hidden when not scrolling, and will slide out when scrolling. The minimap will slide in for 100ms, stay until you have not scrolled for 1500ms, and slide out for 100ms. The above times can be customized in the settings page for this package. For example, you could slow down the time to slide in to 500ms, and slide back out after 1000ms. You can also move the minimap to the left via `minimap`'s settings, which was not supported in the original package.
 
 ![Modified Autohider Behavior](https://raw.githubusercontent.com/ansballard/minimap-autohider/master/gifs/autohiderleft.gif)
