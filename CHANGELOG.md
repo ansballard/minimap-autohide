@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.4.0 - Add error handling for writeFile for Node v7
+
+**Major**
+
+- Add callback to writeFile for saving settings to `.less`
+- Fire off `atom.notifications.addWarning` if writeFile fails
+
+**Minor**
+
+- none
+
 ## 1.3.3 - Fix TransitionDuration Bug
 
 **Minor**
