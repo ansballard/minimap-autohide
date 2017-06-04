@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.5.0 - Deprecate `.scrolling` class, replace yarn with npm@5, add event options
+
+**Major**
+
+- Deprecate `.scrolling` class
+  - can still be used, but I'm now using `.autovisible` in the package itself
+- add an option to disable visibility on scroll
+- add an option for showing the minimap on hover
+- add an option for showing the minimap on click
+
+**Minor**
+
+- replace yarn with npm@5, because I'm a hipster
+
 ## 1.4.0 - Add error handling for writeFile for Node v7
 
 **Major**
