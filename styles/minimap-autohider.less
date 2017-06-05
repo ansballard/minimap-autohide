@@ -15,9 +15,39 @@ atom-text-editor {
     transition: transform @TransitionDuration, opacity @TransitionDuration * 2;
     opacity: 0.05;
     left: 100%;
+    &.visiblepercentage-100 {
+      transform: translateX(-100%);
+    }
+    &.visiblepercentage-75 {
+      transform: translateX(-75%);
+    }
+    &.visiblepercentage-50 {
+      transform: translateX(-50%);
+    }
+    &.visiblepercentage-25 {
+      transform: translateX(-25%);
+    }
+    &.visiblepercentage-0 {
+      transform: translateX(0);
+    }
     &.left {
       left: 0;
       transform: translateX(-100%);
+      &.visiblepercentage-100 {
+        transform: translateX(0);
+      }
+      &.visiblepercentage-75 {
+        transform: translateX(-25%);
+      }
+      &.visiblepercentage-50 {
+        transform: translateX(-50%);
+      }
+      &.visiblepercentage-25 {
+        transform: translateX(-75%);
+      }
+      &.visiblepercentage-0 {
+        transform: translateX(-100%);
+      }
     }
     &.scrolling, &:hover {
       transform: translateX(-100%);
@@ -28,30 +58,3 @@ atom-text-editor {
     }
   }
 }
-
-/*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/

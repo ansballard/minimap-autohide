@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.5.1 - forgot to check the ShowOnHover, changed it to a dropdown
+
+**Minor**
+
+- check HiddenPercentage instead of the ShowOnHover config
+- remove unused clickHandler method
+- switch observers to `onDidChange` so old value can be used
+
 ## 1.5.0 - Deprecate `.scrolling` class, replace yarn with npm@5, add event options
 
 **Major**
