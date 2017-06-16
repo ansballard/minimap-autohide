@@ -1,6 +1,12 @@
 # Changelog
 
-## 1.5.1 - editor.editorElement -> editor.element
+## 1.5.3 - last change was a hardcore typo
+
+**Minor**
+
+- element !== editor, oops
+
+## 1.5.2 - editor.editorElement -> editor.element
 
 **Minor**
 
