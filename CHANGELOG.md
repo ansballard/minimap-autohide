@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.5.1 - editor.editorElement -> editor.element
+
+**Minor**
+
+- editorElement is private, and being removed in the future
+  - switch to element, which is public and references the same thing
+
 ## 1.5.1 - forgot to check the ShowOnHover, changed it to a dropdown
 
 **Minor**
