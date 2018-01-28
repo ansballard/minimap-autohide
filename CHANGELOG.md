@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.5.4 - Clean up styling/less variable logic (@cbarrick) and basic unit tests
+
+**Patch**
+
+- Unit tests pass and test some basic functionality (kinda)
+- visible percentage is now handled by changing a less variable
+  - makes for cleaner code
+  - matches other config option logic
+- `.scrolling` is no longer used
+- changing visible percentage now requires reload, same as transition duration
+
 ## 1.5.3 - last change was a hardcore typo
 
 **Minor**
