@@ -4,7 +4,8 @@
 
 **Patch**
 
-- Unit tests pass and test some basic functionality (kinda)
+- removed unit tests, config and setTimeout makes them ahrd to deal with
+  - maybe later
 - visible percentage is now handled by changing a less variable
   - makes for cleaner code
   - matches other config option logic
