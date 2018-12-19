@@ -1,5 +1,5 @@
 // The ui-variables file is provided by base themes provided by Atom.
-//
+//
 // See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
 // for a full listing of what's available.
 
@@ -9,13 +9,14 @@
 
 atom-text-editor {
   atom-text-editor-minimap {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     position: absolute;
     transition: transform @TransitionDuration, opacity @TransitionDuration * 2;
 
     // Opacity animation
     opacity: 0.05;
-    &.autovisible, &:hover {
+    &.autovisible,
+    &:hover {
       opacity: 1;
     }
 
@@ -23,7 +24,8 @@ atom-text-editor {
     &:not(.left) {
       left: 100%;
       transform: translateX(-@VisiblePercentage);
-      &.autovisible, &:hover {
+      &.autovisible,
+      &:hover {
         transform: translateX(-100%);
       }
     }
@@ -32,10 +34,10 @@ atom-text-editor {
     &.left {
       left: 0;
       transform: translateX(-100% + @VisiblePercentage);
-      &.autovisible, &:hover {
+      &.autovisible,
+      &:hover {
         transform: translateX(0);
       }
     }
-
   }
 }

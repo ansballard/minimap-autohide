@@ -8,6 +8,17 @@
     "name": "Aaron Ballard (ansballard)",
     "email": "ans.ballard@gmail.com"
   },
+  "scripts": {
+    "prettier": "prettier --write \"{lib,spec,styles}/*.{js,less}\"",
+    "gitadd": "git add lib styles spec"
+  },
+  "precommit": [
+    "prettier",
+    "gitadd"
+  ],
+  "package-deps": [
+    "minimap"
+  ],
   "contributors": [
     {
       "name": "Jay Kuri (jayk)"
@@ -29,6 +40,10 @@
     }
   },
   "devDependencies": {
-    "eslint": "^3.14.1"
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.15.3"
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.6.2"
   }
 }

@@ -1,0 +1,17 @@
+image: node:10
+
+before_script:
+  - npm i
+
+cache:
+  paths:
+    - node_modules/
+
+publish:
+  stage: deploy
+  only:
+    - tags
+    - triggers
+  script:
+    - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
+    - npm publish
