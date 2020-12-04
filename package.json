@@ -1,7 +1,7 @@
 {
   "name": "minimap-autohider",
-  "main": "./lib/minimap-autohider.js",
-  "version": "1.6.0",
+  "main": "lib/minimap-autohider.js",
+  "version": "1.7.0",
   "description": "Automatically hide the minimap when you aren't using it.",
   "repository": "https://github.com/ansballard/minimap-autohider",
   "author": {
@@ -16,8 +16,13 @@
     "prettier",
     "gitadd"
   ],
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
   "package-deps": [
-    "minimap"
+    {
+      "name": "minimap"
+    }
   ],
   "contributors": [
     {
@@ -41,9 +46,9 @@
   },
   "devDependencies": {
     "pre-commit": "^1.2.2",
-    "prettier": "^1.15.3"
+    "prettier": "^2.2.1"
   },
   "dependencies": {
-    "atom-package-deps": "^4.6.2"
+    "atom-package-deps": "^7.0.2"
   }
 }
